@@ -2,9 +2,10 @@
 Extension report for the Tomcat JDBC Connection Pool
 ### What does it do ?
 CountQueryReport counts the number of statements executed between two defined points. You could count the number of executed statements for a method, transaction or any other unit of work. 
-### What do i need ?
-Java 1.5+
-The Tomcat JDBC Connection Pool
+### What do i need ?  
+  - Java 1.5+
+  - The Tomcat JDBC Connection Pool 
+  
 ### How do i build it ?
 Clone the repository and run 
 ```sh
