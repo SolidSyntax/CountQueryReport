@@ -18,6 +18,16 @@ package net.solidsyntax.jdbc.pool.interceptor;
 
 import org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport;
 
+/**
+ * CountQueryReport is an extension for the Tomcat JDBC connection pool.
+ * CountQueryReport counts the number of statements executed between two defined points.
+ * The range in which statements are counted is demarcated by the invocation of
+ * {@link #resetCount() resetCount} and {@link #numberOfStatements() numberOfStatements}.
+ * Statements are counted separated for each Thread.
+ * 
+ * @author      Hans Maes
+ * @version     1.0
+ */
 public class CountQueryReport extends AbstractQueryReport {
 	private static final ThreadLocalCounter counter = new ThreadLocalCounter();
 	
