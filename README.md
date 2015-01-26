@@ -9,11 +9,11 @@ CountQueryReport counts the number of statements executed between two defined po
 ### How do i build it ?
 Clone the repository and run 
 ```sh
-./gradlew build
+./gradlew assemble
 ```
-The resulting jar can be found in 
+This creates the binary, source and javadoc jars in
 ```sh
-build/lib/CountQueryReport.jar
+build/lib/
 ```
 ### How do I use it ?
 Add CountQueryReport.jar to your project.
