@@ -27,8 +27,10 @@ In a Spring environment:
 	<property name="jdbcInterceptors" value="net.solidsyntax.jdbc.pool.interceptor.CountQueryReport" />
 </bean>
 ```
-Add code where you want to count statements:
+Add code where you want to count statements:  
+```java
 CountQueryReport.resetCount();  //Reset the count for the current thread
 int nrOfqueries = CountQueryReport.numberOfStatements();  //Get the number of statements executed on the current thread since the last reset
+```
 ### More information
 Official JDBC-pool site: http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html
